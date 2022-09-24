@@ -26,8 +26,9 @@ class ViewController: UIViewController {
         case greenSlider = "greenSlider"
         case blueSlider = "blueSlider"
     }
+    private let coefficientOfCornerRadius = 0.25
     
-    //MARK: Life Cycle 
+    //MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViewBackgroundColor()
@@ -59,7 +60,7 @@ class ViewController: UIViewController {
     // MARK: Private Functions
     
     private func setupColorView() {
-        colorView.layer.cornerRadius = colorView.frame.height * 0.2
+        colorView.layer.cornerRadius = colorView.frame.height * coefficientOfCornerRadius
     }
 
     private func setupViewBackgroundColor() {
