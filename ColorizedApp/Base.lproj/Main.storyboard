@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_72" orientation="portrait" appearance="dark"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -38,20 +38,24 @@
                                                             <constraint firstAttribute="width" constant="55" id="aQS-aK-daB"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiC-dS-2EP">
-                                                        <rect key="frame" x="62" y="0.0" width="30" height="35.333333333333336"/>
+                                                        <rect key="frame" x="62" y="0.0" width="50" height="35.333333333333336"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="30" id="RWY-hp-KaO"/>
+                                                            <constraint firstAttribute="width" constant="50" id="RWY-hp-KaO"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3gI-sN-VP1">
-                                                        <rect key="frame" x="97" y="0.0" width="315" height="36.333333333333336"/>
+                                                    <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="redSlider" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3gI-sN-VP1">
+                                                        <rect key="frame" x="117" y="0.0" width="295" height="36.333333333333336"/>
+                                                        <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
+                                                        <connections>
+                                                            <action selector="sliderDidChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="XVQ-TJ-RQN"/>
+                                                        </connections>
                                                     </slider>
                                                 </subviews>
                                             </stackView>
@@ -64,20 +68,24 @@
                                                             <constraint firstAttribute="width" constant="55" id="wtI-RD-yDh"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3x-qF-LpH">
-                                                        <rect key="frame" x="62" y="0.0" width="30" height="35.333333333333336"/>
+                                                        <rect key="frame" x="62" y="0.0" width="50" height="35.333333333333336"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="30" id="mqD-Ye-9LQ"/>
+                                                            <constraint firstAttribute="width" constant="50" id="mqD-Ye-9LQ"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ehu-Bg-Vfa">
-                                                        <rect key="frame" x="97" y="0.0" width="315" height="36.333333333333336"/>
+                                                    <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="greenSlider" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ehu-Bg-Vfa">
+                                                        <rect key="frame" x="117" y="0.0" width="295" height="36.333333333333336"/>
+                                                        <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
+                                                        <connections>
+                                                            <action selector="sliderDidChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ppw-Ad-dUU"/>
+                                                        </connections>
                                                     </slider>
                                                 </subviews>
                                             </stackView>
@@ -90,20 +98,24 @@
                                                             <constraint firstAttribute="width" constant="55" id="9kj-zj-9Tb"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DP-St-Ilx">
-                                                        <rect key="frame" x="62" y="0.0" width="30" height="35.333333333333336"/>
+                                                        <rect key="frame" x="62" y="0.0" width="50" height="35.333333333333336"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="30" id="hZQ-Kg-RKT"/>
+                                                            <constraint firstAttribute="width" constant="50" id="hZQ-Kg-RKT"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3ro-hJ-zbE">
-                                                        <rect key="frame" x="97" y="0.0" width="315" height="36.333333333333336"/>
+                                                    <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="blueSlider" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3ro-hJ-zbE">
+                                                        <rect key="frame" x="117" y="0.0" width="295" height="36.333333333333336"/>
+                                                        <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
+                                                        <connections>
+                                                            <action selector="sliderDidChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="1f4-Mq-JM5"/>
+                                                        </connections>
                                                     </slider>
                                                 </subviews>
                                             </stackView>
@@ -116,13 +128,20 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <color key="tintColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="rgj-Fl-uV9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="8vV-ha-iQS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rgj-Fl-uV9" secondAttribute="trailing" constant="10" id="Dgm-MZ-ap2"/>
                             <constraint firstItem="rgj-Fl-uV9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="qff-JO-WbY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueValueLabel" destination="9DP-St-Ilx" id="BZw-8n-Zq0"/>
+                        <outlet property="colorView" destination="R1l-3r-aTa" id="VGR-hI-F25"/>
+                        <outlet property="greenValueLabel" destination="b3x-qF-LpH" id="Ro3-UB-bTd"/>
+                        <outlet property="redValueLabel" destination="SiC-dS-2EP" id="C0F-pT-JEZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -130,11 +149,23 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
